@@ -8,11 +8,11 @@
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 70px) .50fr 2fr 1fr 1fr 2fr;
 }
 
 aside {
-    grid-area: 1 / 1 / 7 / 2;
+    grid-area: 1 / 1 / 8 / 2;
     display: grid;
     grid-template-columns: 1fr;;
     grid-template-rows: repeat(20, 1fr);
@@ -67,4 +67,19 @@ a {
 
 .privacy {
     grid-row: 12 / 13;
+}
+
+.gray-titles-area {
+    grid-area: 3 / 2 / 4 / 5;
+    background-color: rgb(225, 224, 224);
+    font-size: 20px;
+    font-weight: 550;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.announcements {
+    grid-column: 4;
 }
