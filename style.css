@@ -13,6 +13,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 70px) .50fr 2fr 1fr 1fr 2fr;
+    gap: 20px;
+    background-color: rgb(225, 224, 224);;
   }
   
   aside {
@@ -98,8 +100,8 @@
     grid-area: 4 / 2 / 8 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: lightgrey;
-    gap: 30px;
+    background-color: rgb(225, 224, 224);
+    gap: 20px;
   }
   
   .article {
@@ -115,16 +117,79 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 20px;
+    background-color: white;
+    border-radius: 10px;
   }
 
   .trending-section {
     grid-area: 6 / 4 / 8 / 5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
   }
 
   img {
-    width: 50px;
+    width: 35px;
     height: auto;
     border-radius: 40px;
+  }
+
+  .trending-section * a {
+    color: rgb(0, 0, 0);
+  }
+
+  .trending-title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 550;
+    grid-column: 1 / 2;
+    align-items: center;
+    text-align: center;
+  }
+  .img-1 {
+    grid-row: 2;
+  }
+
+  .img-2 {
+    grid-row: 3;
+  }
+
+  .img-3 {
+    grid-row: 4;
+  }
+
+  .img-4 {
+    grid-row: 5;
+  }
+
+  .link-1 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .link-2 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .link-3 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .link-4 {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+  header {
+    grid-area: 1 / 2 / 4 / 5;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+  }
+
+  input {
+    background-color: rgb(225, 224, 224);;
   }
