@@ -1,6 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'JosephinSlab';
+  }
+
+  @font-face {
+    font-family: 'JosephinSlab';
+    src: url('JosefinSlab.ttf')
   }
   
   p {
@@ -30,6 +36,11 @@
     align-items: center;
     text-align: start;
   }
+
+  aside > img {
+    padding-left: 90px;
+    margin: 10px;
+  }
   
   .dashboard {
     grid-column: 2 / 3;
@@ -42,36 +53,72 @@
     text-decoration: none;
   }
   
+  .home-icon {
+    grid-row: 3;
+  }
+
   .home {
     grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .profile-icon {
+    grid-row: 4;
   }
   
   .profile {
     grid-row: 4 / 5;
   }
+
+  .message-icon {
+    grid-row: 5;
+  }
   
   .messages {
     grid-row: 5 / 6;
+  }
+
+  .history-icon {
+    grid-row: 6;
   }
   
   .history {
     grid-row: 6 / 7;
   }
+
+  .tasks-icon {
+    grid-row: 7;
+  }
   
   .tasks {
     grid-row: 7 / 8;
+  }
+
+  .communities-icon {
+    grid-row: 8;
   }
   
   .communities {
     grid-row: 8 / 9;
   }
+
+  .settings-icon {
+    grid-row: 11;
+  }
   
   .settings {
     grid-row: 11 / 12;
   }
+
+  .support-icon {
+    grid-row: 12;
+  }
   
   .support {
     grid-row: 12 / 13;
+  }
+
+  .privacy-icon {
+    grid-row: 13;
   }
   
   .privacy {
@@ -169,14 +216,6 @@
     text-align: end;
   }
 
-  .img-1,
-  .img-2,
-  .img-3,
-  .img-4 {
-    text-align: end;
-    margin-right: 5px;
-  }
-
   .trending-title {
     color: #000000;
     font-size: 20px;
@@ -200,6 +239,14 @@
 
   .img-4 {
     grid-row: 5;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4 {
+    text-align: end;
+    margin-right: 5px;
   }
 
   .link-1 {
@@ -289,48 +336,11 @@
     background-color: rgba(49, 129, 214, 0.929);
   }
 
-  .home-icon {
-    grid-row: 3;
-  }
-
-  .profile-icon {
-    grid-row: 4;
-  }
-
-  .message-icon {
-    grid-row: 5;
-  }
-
-  .history-icon {
-    grid-row: 6;
-  }
-
-  .tasks-icon {
-    grid-row: 7;
-  }
-
-  .communities-icon {
-    grid-row: 8;
-  }
-
-  .settings-icon {
-    grid-row: 11;
-  }
-
-  .support-icon {
-    grid-row: 12;
-  }
-
-  .privacy-icon {
-    grid-row: 13;
-  }
-
-  aside > img {
-    padding-left: 90px;
-    margin: 10px;
-  }
-
   .icon-section {
-    display: flex
-    
+    text-align: end;
+  }
+
+  .icon-section > img {
+    width: auto;
+    height: 25px;
   }
